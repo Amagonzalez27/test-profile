@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hello World!!!</h1>
+    <h2>My name is Amanda!</h2>
+    <div class="about_me">
+      <img src="https://lh3.googleusercontent.com/jlP6RzGtvQzQcUYBGG2QjS4iv2hoaqrxdmpD4CoYpRWCQm3VVMNZM3n1KM1aaKGXOEx1YZLiQIPnt_OjUKmUM8bPfsddStYjEera0irAyH72i8zc0f4Fsl0v_6lHW_vdRladrGDxxXw9AXxY6LGNdRgs95d2HUzWdn53DtjwYq6BEcLPLSorMK6PQ_kaytlUKUvZLAYsNcN5MFfdBOpHgw95xWWIOlkaf2NnIXLuUirJLohio5uIiX7tyPnUg48PM8vMKWeXWD3eZHhZyEM8zQjOo_xdYwFXl_n7f2898TgGY_LNpNuwaXBOsep8-xGuRLn_Ig49tFMNqMaT6Y0PflM2JUB7VE1bQoezgn1hGlpTpMOyA0DpUqc9vuVFwfF8Tr-ehPDfZHLQQfk9hWRC9zW4IRdNW0i_b8lo5ficgLvvcI79R31Hk_lIzqeS1ApjEPeYW-RI6hxWuS1KuAx4iwg142F2hC__A0PeAeN_Y79cXNEkWCkVrVUZJ6zQIRxNg7x9rsH6IWUck2WsFwvvw20G1xIF_ZQyAoRSt62X11U_n1J0-gp5aVvyFse9I3IFRRhzoHMqTHxQwmcw5O0guH0zVQb8Z6CwsvOXku9zPFkrcWt_plxRZSoMuA-URCZM=w1288-h1608-no"
+        width="200px">
+      <button>
+        Click for Glitter
+      </button>
+    </div>
+  </div>
+
+
+  <script>
+    const displayGlitter = document.querySelector('button');
+
+    displayGlitter.addEventListener('click', addGlitter);
+
+    function addGlitter(e) {
+      const background = document.querySelector("body");
+      background.classList.toggle('glitter');
+
+    }
+  </script>
+</body>
+
+</html>
